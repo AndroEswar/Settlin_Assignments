@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Settlin</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<ul id="left-nav">
+		<li><a href="#Education">Education</a></li>
+		<li><a href="#career">Career</a></li>
+		<li><a href="#family">About Family</a></li>
+		<li><a href="#Hobbies">Hobbies</a></li>
+	</ul>
+	<div id="top-nav">
+		<h4>My Details</h4>
+	</div>
+	<div id="right-nav">
+		<img src="https://pngimage.net/wp-content/uploads/2018/05/dummy-profile-image-png-2.png" style="width: 100%;">
+	</div>
+	<div id="content">
+		<div id="Education">
+			<h2>Education:</h2>
+			<table>
+				<th>Qualification</th>
+				<th>University</th>
+				<th>Year of Passed</th>
+				<th>Percentage %</th>
+				<tr>
+					<td>MCA</td>
+					<td>JNTUCEA</td>
+					<td>2018</td>
+					<td>73%</td>
+				</tr>
+				<tr>
+					<td>B.Sc</td>
+					<td>Vikramasimhapuri University</td>
+					<td>2015</td>
+					<td>75%</td>
+				</tr>
+				<tr>
+					<td>Intermediate</td>
+					<td>State Board</td>
+					<td>2012</td>
+					<td>61%</td>
+				</tr>
+				<tr>
+					<td>10<sup>th</sup></td>
+					<td>State Board</td>
+					<td>2010</td>
+					<td>70%</td>
+				</tr>
+			</table>
+		</div>
+		<div id="career">
+			<h2>Career:</h2>
+		</div>
+		<div>
+			<ul>
+				<li>Worked as a Intern for 1 month at Crion Technologies at Chennai as Wed Developer.</li>
+				<li>Worked as a Software Engineer for 2 months at Cloudnix Software Labs Pvt Ltd.</li>
+				<li>I got an letter of Appreciation for being a part of Bonafide Certificate Generation System, JNTUCEA.</li>
+			</ul>
+		</div>
+		<div id="family">
+			<h2>About Family: </h2>
+		</div>
+		<div>
+			<ul>
+				<li>My Father's Name is <strong>Koteswara Rao</strong>. He is a Weaver</li>
+				<li>My Mother's Name is <strong>Prabhavathi</strong>. She keeps Home</li>
+				<li>My Brother's Name is <strong>Bhanu Prakash</strong>. He is a Software Engineer at HCL</li>
+				<li>And Me.</li>
+			</ul>
+		</div>
+		<div id="Hobbies">
+			<h2>Hobbies: </h2>
+		</div>
+		<div>
+			<ol>
+				<li>Playing Chess</li>
+				<li>Reading Books</li>
+				<li>Listening to music</li>
+				<li>Watching Movies</li>
+				<li>Solving Programming Challenges</li>
+			</ol>
+		</div>
+
+		<div style="text-align: center;">
+			<div>
+				<h2>Calculator</h2>
+			</div>
+			<div>
+				<div>
+					<label style="font-size: 20px; width: 50%; margin: 5px; padding: 5px;">Number 1: </label>
+					<input type="number" id="x" style="font-size: 20px; width: 50%; margin: 5px; padding: 5px;">
+				</div>
+				<div>
+					<label style="font-size: 20px; width: 50%; margin: 5px; padding: 5px;">Number 2: </label>
+					<input type="number" id="y" style="font-size: 20px; width: 50%; margin: 5px; padding: 5px;">
+				</div>
+			</div>
+			<div>
+				<button onclick="sum()" style="font-size: 20px; width: 20%; margin: 5px; padding: 5px;">SUM</button>
+				<button onclick="sub()" style="font-size: 20px; width: 20%; margin: 5px; padding: 5px;">Subtration</button>
+				<button onclick="mul()" style="font-size: 20px; width: 20%; margin: 5px; padding: 5px;">Multiplication</button>
+				<button onclick="div()" style="font-size: 20px; width: 20%; margin: 5px; padding: 5px; ">Division</button><br>
+			</div>
+
+			<div id="result" style="font-size: 20px; margin: 5px;">
+				
+			</div>
+		</div>
+
+		<div style="text-align: center;">
+			<h2>Personal Details</h2>
+		</div>
+		<form id="job-form" style="text-align: center;">
+			<div class="flex-container">
+				<div class="flex-items">
+					<label>Name: </label>
+				</div>
+				<div class="flex-items1">
+					<input style="font-size: 20px; width: 100%; padding: 5px;" type="text" name="name" id="name" required>
+				</div>
+			</div>
+
+			<div class="flex-container">
+				<div class="flex-items">
+					<label>DOB: </label>
+				</div>
+				<div class="flex-items1">
+					<input style="font-size: 20px; width: 100%; padding: 5px;" type="date" name="dob" id="dob" onfocusout="ageCalculate()" required>
+				</div>
+			</div>
+			
+			<div class="flex-container">
+				<div class="flex-items">
+					<label>Your Age: </label>
+				</div>
+				<div class="flex-items1">
+					<input id="yourage" style="font-size: 20px; width: 100%; padding: 5px;" disabled></input>
+				</div>
+			</div>
+
+			<div class="flex-container">
+				<div class="flex-items">
+					<label>You Are: </label>
+				</div>
+				<div class="flex-items1">
+					<input id="major_minor" style="font-size: 20px; width: 100%; padding: 5px;" disabled></input>
+				</div>
+			</div>
+
+			<div class="flex-container">
+				<div class="flex-items">
+					<label>Hobbies: </label>
+				</div>
+				<div class="flex-items1">
+					<select style="font-size: 12px; width: 100%; padding: 5px;" name="hobbies" id="hobbies" required>
+						<option value="" disabled selected> --Select Your Hobbie-- </option>
+						<option value="Playing chess">Playing Chess</option>
+						<option value="Reading Books">Reading Books</option>
+						<option value="Watching Movies">Watching Movies</option>
+						<option value="Chatting With Friends">Chatting With Friends</option>
+						<option value="Solving Programming Challenges">Solving Programming Challenges</option>
+					</select>
+				</div>
+			</div>
+			
+			<button type="button" id="submit-btn" onclick="personalDetails()" style="font-size: 20px; width: 50%; margin: 5px; padding: 5px;">Submit</button>
+		</form>
+		<div id="persondetails_div">
+			<button type="button" onclick="displayDetails()" style="font-size: 20px; width: 50%; margin: 5px; padding: 5px;">Display Details</button> 
+		</div>
+
+		<!-- flex container starts here -->
+		<div id="personDetailsDisplay">
+			<div class="flex-container">
+				<div class="flex-items">
+					<label> Name is </label>
+				</div>
+				<div class="flex-items1">
+					<span id="display_name"></span>
+				</div>
+			</div>
+			<div class="flex-container">
+				<div class="flex-items">
+					<label> Date Of Birth is </label>
+				</div>
+				<div class="flex-items1">
+					<span id="display_dob"></span>
+				</div>
+			</div>
+			<div class="flex-container">
+				<div class="flex-items">
+					<label> Age is </label>
+				</div>
+				<div class="flex-items1">
+					<span id="display_age"></span>
+				</div>
+			</div>
+			<div class="flex-container">
+				<div class="flex-items">
+					<label> He/She is </label>
+				</div>
+				<div class="flex-items1">
+					<span id="display_his"></span>
+				</div>
+			</div>
+			<div class="flex-container">
+				<div class="flex-items">
+					<label> Hobbies is </label>
+				</div>
+				<div class="flex-items1">
+					<span id="display_hobbies"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
